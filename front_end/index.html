@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>License Key Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>License Key Manager</h2>
+        <div class="section">
+            <h3>Create License Key</h3>
+            <input type="number" id="expiresIn" placeholder="Expires in days (default 30)" min="1" style="width: 70%" />
+            <button onclick="createLicense()">Create</button>
+            <div id="createResult"></div>
+        </div>
+        <hr>
+        <div class="section">
+            <h3>Check License Key</h3>
+            <input type="text" id="licenseKeyCheck" placeholder="Enter license key" />
+            <button onclick="checkLicense()">Check</button>
+            <div id="checkResult"></div>
+        </div>
+        <hr>
+        <div class="section">
+            <h3>Delete (Deactivate) License Key</h3>
+            <input type="text" id="licenseKeyDelete" placeholder="Enter license key" />
+            <button onclick="deleteLicense()">Delete</button>
+            <div id="deleteResult"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
